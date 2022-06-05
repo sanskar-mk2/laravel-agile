@@ -1,0 +1,17 @@
+Kanban Board
+Have Tasks
+Tasks can be moved to defferent columns
+Can have n number of columns
+Have a way to show soft limit (a red dotted line)
+warn if exceeding soft limit
+right side only progression?
+Track when a task is moved to a different columns (logs)
+Mobile First
+Index page with scrum and kanban
+value cost matrix
+Go to landing - information
+Register and login
+Logged in
+Create a new project
+Enter the unique code for the project
+Enter the kanban, the kanban is also added to your list
