@@ -13,6 +13,7 @@
         "@tailwindcss/forms": "^0.4",
         "@tailwindcss/typography": "^0.5",
         "alpinejs": "^3.8",
+        "blade-formatter": "^1.26.4",
         "browser-sync": "^2.27.10",
         "browser-sync-webpack-plugin": "^2.3.0",
         "laravel-mix": "^6.0.6",
