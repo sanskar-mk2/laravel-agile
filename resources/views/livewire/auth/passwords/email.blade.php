@@ -3,16 +3,16 @@
 <div>
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <a href="{{ route('home') }}">
-            <x-logo class="mx-auto h-16 w-auto text-indigo-600" />
+            <x-logo class="w-auto h-16 mx-auto text-indigo-600" />
         </a>
 
-        <h2 class="mt-6 text-center text-3xl font-extrabold leading-9 text-gray-900">
+        <h2 class="mt-6 text-3xl font-extrabold text-center text-gray-900 leading-9">
             Reset password
         </h2>
     </div>
 
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div class="bg-white px-4 py-8 shadow sm:rounded-lg sm:px-10">
+        <div class="px-4 py-8 bg-white shadow sm:rounded-lg sm:px-10">
             @if ($emailSentMessage)
                 <div class="rounded-md bg-green-50 p-4">
                     <div class="flex">
@@ -25,7 +25,7 @@
                         </div>
 
                         <div class="ml-3">
-                            <p class="text-sm font-medium leading-5 text-green-800">
+                            <p class="text-sm leading-5 font-medium text-green-800">
                                 {{ $emailSentMessage }}
                             </p>
                         </div>
@@ -34,13 +34,13 @@
             @else
                 <form wire:submit.prevent="sendResetPasswordLink">
                     <div>
-                        <label for="email" class="block text-sm font-medium leading-5 text-gray-700">
+                        <label for="email" class="block text-sm font-medium text-gray-700 leading-5">
                             Email address
                         </label>
 
                         <div class="mt-1 rounded-md shadow-sm">
                             <input wire:model.lazy="email" id="email" name="email" type="email" required autofocus
-                                class="focus:ring-blue @error('email') border-red-300 text-red-900 placeholder-red-300 focus:border-red-300 focus:ring-red @enderror block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 transition duration-150 ease-in-out focus:border-blue-300 focus:outline-none sm:text-sm sm:leading-5" />
+                                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('email') border-red-300 text-red-900 placeholder-red-300 focus:border-red-300 focus:ring-red @enderror" />
                         </div>
 
                         @error('email')
@@ -51,7 +51,7 @@
                     <div class="mt-6">
                         <span class="block w-full rounded-md shadow-sm">
                             <button type="submit"
-                                class="focus:ring-indigo flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:border-indigo-700 focus:outline-none active:bg-indigo-700">
+                                class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
                                 Send password reset link
                             </button>
                         </span>

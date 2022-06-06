@@ -4,5 +4,5 @@
     "wrapLineLength": 120,
     "endWithNewLine": true,
     "useTabs": false,
-    "sortTailwindcssClasses": true
+    "sortTailwindcssClasses": false
   }

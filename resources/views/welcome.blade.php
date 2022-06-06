@@ -42,7 +42,7 @@
 
                     <ul class="flex justify-around">
                         <li class="inline px-4">
-                            <a href="javascript:void(0);"
+                            <a href="{{ route('stories') }}"
                                 class="font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500 focus:underline focus:outline-none">
                                 Kanban</a>
                         </li>
